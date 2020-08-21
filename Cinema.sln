@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema", "Cinema.csproj", "{140111C0-9C2E-48D0-906A-553FC8F40B46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCinema", "..\UnitTestCinema\UnitTestCinema.csproj", "{F9FB9D34-1404-4A3E-AE89-F861EAB1040B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{140111C0-9C2E-48D0-906A-553FC8F40B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140111C0-9C2E-48D0-906A-553FC8F40B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140111C0-9C2E-48D0-906A-553FC8F40B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140111C0-9C2E-48D0-906A-553FC8F40B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FB9D34-1404-4A3E-AE89-F861EAB1040B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FB9D34-1404-4A3E-AE89-F861EAB1040B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FB9D34-1404-4A3E-AE89-F861EAB1040B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FB9D34-1404-4A3E-AE89-F861EAB1040B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0C7CFC4-F462-433F-B89F-7B93CC9DD1EA}
+	EndGlobalSection
+EndGlobal
