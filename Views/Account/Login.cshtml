@@ -1,0 +1,13 @@
+﻿@model Cinema.Models.LoginModel
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+<div>
+    @Html.EditorFor(m => m.Login)
+</div>
+<div>
+    @Html.PasswordFor(p => p.Password)
+ </div>
+<input type="submit" value="Login"/>
+}
+

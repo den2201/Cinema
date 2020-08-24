@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+@using Cinema.Helpers;
 <html>
 <head>
     <meta charset="utf-8" />
@@ -23,6 +24,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("LogIn","Login","Account")</li>
                 </ul>
             </div>
         </div>
@@ -30,9 +32,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        @Html.Footer(DateTime.Now.Year.ToString(), "Nikiforov Denis")
+        <footer></footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
