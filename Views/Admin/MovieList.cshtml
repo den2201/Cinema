@@ -1,0 +1,77 @@
+﻿
+@model Cinema.Models.Film[] 
+@{
+    ViewBag.Title = "MovieList";
+}
+
+<h2>Movie List</h2>
+<table>
+    
+    <tr>
+        <th style="min-width:30px">
+            ID
+        </th>
+        <th style="min-width:100px">
+            
+            Poster
+        </th>
+
+        <th style="min-width:100px">
+            
+            Title
+        </th>
+        <th style="min-width:300px">
+            
+            Description
+        </th>
+        <th style="min-width:100px">
+            
+            Ganres
+        </th>
+
+        <th style="min-width:100px">
+            
+            Director
+        </th>
+        <th style="min-width:50px">
+            Min Age
+        </th>
+    </tr>
+    @foreach(var film in @Model)
+    {<tr>
+    <td>
+        @film.FilmID
+    </td>
+    <td>
+        <img src="@film.PosterUrl" style="max-height:100px" title="Not found" />
+    </td>
+    <td>
+        @film.Title
+    </td>
+    <td>
+        @film.Description
+    </td>
+    <td>
+        @foreach(var ganre in @film.Ganres)
+        {
+            @ganre 
+        }
+    </td>
+    <td>
+        @film.Director
+    </td>
+    <td>
+        @film.MinAge
+    </td>
+
+
+
+
+
+
+
+
+</tr>
+    }
+</table>
+
