@@ -51,6 +51,7 @@ namespace Cinema
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Cinema}/{action=Index}/{id?}");
+               
             });
         }
     }
